@@ -1,0 +1,81 @@
+* {
+  font-family: "Source Code Pro", monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515;
+}
+
+.wrapper {
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+}
+
+.navbar {
+  background-color: #151515;
+}
+.navbar a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.44rem;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar a:hover, .navbar a:visited {
+  color: #fff;
+}
+
+.navbar-nav li {
+  margin-left: 1.5rem;
+}
+
+.top-menu li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+  transform: scale(1);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  stroke: #fff !important;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 6.25rem;
+  margin-top: 15.625rem;
+}
+
+.header-text {
+  display: flex;
+  font-weight: 400;
+  font-size: 7.75rem;
+  line-height: 89%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  justify-content: end;
+  margin: 8.125rem 10.5rem 10rem auto;
+}
+
+.main-img {
+  position: absolute;
+  width: 54rem;
+  height: auto;
+  left: -0.05px;
+  top: 20rem;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */
