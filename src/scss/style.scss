@@ -17,6 +17,9 @@ body {
   padding-right: 6.25rem;
 }
 
+section {
+  margin-bottom: 10rem;
+}
 // Header
 
 .navbar {
@@ -70,6 +73,15 @@ h1 {
   margin-top: 15.625rem;
 }
 
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  color: $text_light;
+  margin-bottom: 10rem;
+}
+
 .header-text {
   display: flex;
   font-weight: 400;
@@ -79,7 +91,7 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
   justify-content: end;
-  margin: 8.125rem 10.5rem 10rem auto;
+  margin: 8.125rem 0 10rem auto;
 }
 
 .main-img {
@@ -89,4 +101,72 @@ h1 {
   left: -0.05px;
   top: 20rem;
   z-index: -1;
+}
+
+// General info section
+
+.general-info-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: $text_light;
+  margin-bottom: 1.875rem;
+}
+
+.general-info-desc {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: $text_light;
+}
+
+.img-1 {
+  position: absolute;
+  width: 763px;
+  height: 763px;
+  right: 6.25rem;
+  top: 1530px;
+  z-index: -1;
+}
+
+.general-info-item {
+  padding: 0 5.375rem;
+  margin-bottom: 6.125rem;
+}
+
+// Experience section
+
+.experience-flex-container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+.experience-title {
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 125%;
+  color: $text_light;
+  margin-bottom: 1.875rem;
+}
+
+.experience-info-desc {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 125%;
+  color: $text_light;
+  text-align: center;
+}
+
+.experience-addition-info {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.85rem;
+  line-height: 125%;
+  color: $text_light;
+}
+.experience {
+  padding: 0 2rem;
+  margin-bottom: 6.125rem;
 }
