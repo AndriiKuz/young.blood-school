@@ -1,11 +1,13 @@
-$background_color: #151515;
+$background_color: rgba(21, 21, 21, 0.95);
 $text_light: #fff;
+$btn: #f8d849;
 
 * {
   font-family: "Source Code Pro", monospace;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
 }
 
 body {
@@ -20,11 +22,19 @@ body {
 section {
   margin-bottom: 10rem;
 }
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  color: $text_light;
+  margin-bottom: 10rem;
+}
+
 // Header
 
 .navbar {
-  background-color: $background_color;
-
   a {
     font-style: normal;
     font-weight: 700;
@@ -38,135 +48,272 @@ section {
       color: $text_light;
     }
   }
-}
 
-.navbar-nav {
-  li {
-    margin-left: 1.5rem;
+  .custom-toggler {
+    &.navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      font-size: 2rem;
+    }
+  }
+
+  .navbar-nav {
+    li {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .top-menu li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: $text_light;
+    height: 1px;
+    transition: all 0.3s;
+    transform: scale(0);
+  }
+
+  .top-menu li a:hover::after {
+    transform: scale(1);
   }
 }
 
-.top-menu li a::after {
-  content: "";
-  display: block;
-  width: 100%;
-  background-color: $text_light;
-  height: 1px;
-  transition: all 0.3s;
-  transform: scale(0);
-}
+header {
+  h1 {
+    color: $text_light;
+    font-weight: 900;
+    font-size: 6.25rem;
+    margin-top: 15.625rem;
+  }
 
-.top-menu li a:hover::after {
-  transform: scale(1);
-}
+  .header-text {
+    display: flex;
+    font-weight: 400;
+    font-size: 7.75rem;
+    line-height: 89%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text_light;
+    justify-content: end;
+    margin: 8.125rem 0 10rem auto;
+  }
 
-.navbar-toggler {
-  .navbar-toggler-icon {
-    stroke: $text_light !important;
+  .main-img {
+    position: absolute;
+    width: 54rem;
+    height: auto;
+    left: -0.05px;
+    top: 20rem;
+    z-index: -1;
   }
 }
 
-h1 {
-  color: $text_light;
-  font-weight: 900;
-  font-size: 6.25rem;
-  margin-top: 15.625rem;
-}
+// About-young section
 
-.section-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4.5rem;
-  line-height: 5rem;
-  color: $text_light;
-  margin-bottom: 10rem;
-}
+.about-young {
+  .about-young-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $text_light;
+    margin-bottom: 1.875rem;
+  }
 
-.header-text {
-  display: flex;
-  font-weight: 400;
-  font-size: 7.75rem;
-  line-height: 89%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  justify-content: end;
-  margin: 8.125rem 0 10rem auto;
-}
+  .about-young-desc {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: $text_light;
+  }
 
-.main-img {
-  position: absolute;
-  width: 54rem;
-  height: auto;
-  left: -0.05px;
-  top: 20rem;
-  z-index: -1;
-}
+  .about-young-item {
+    width: 22rem;
+    margin: 0 auto 4rem auto;
+  }
 
-// General info section
-
-.general-info-title {
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.875rem;
-  color: $text_light;
-  margin-bottom: 1.875rem;
-}
-
-.general-info-desc {
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  color: $text_light;
-}
-
-.img-1 {
-  position: absolute;
-  width: 763px;
-  height: 763px;
-  right: 6.25rem;
-  top: 1530px;
-  z-index: -1;
-}
-
-.general-info-item {
-  padding: 0 5.375rem;
-  margin-bottom: 6.125rem;
+  .empty {
+    width: 22rem;
+    margin: 0 auto 4rem auto;
+  }
 }
 
 // Experience section
 
-.experience-flex-container {
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-}
-
-.experience-title {
-  font-weight: 900;
-  font-size: 2.25rem;
-  line-height: 125%;
-  color: $text_light;
-  margin-bottom: 1.875rem;
-}
-
-.experience-info-desc {
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 125%;
-  color: $text_light;
-  text-align: center;
-}
-
-.experience-addition-info {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 0.85rem;
-  line-height: 125%;
-  color: $text_light;
-}
 .experience {
-  padding: 0 2rem;
+  position: relative;
   margin-bottom: 6.125rem;
+
+  .experience-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-title {
+    font-weight: 900;
+    font-size: 2.25rem;
+    line-height: 125%;
+    color: $text_light;
+    margin-bottom: 1.875rem;
+  }
+
+  .experience-info-desc {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 125%;
+    color: $text_light;
+    text-align: center;
+  }
+
+  .experience-addition-info {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 125%;
+    color: $text_light;
+  }
+
+  .experience-item {
+    padding: 0;
+    width: 18rem;
+    margin: 0 auto 4rem auto;
+  }
+
+  .img-1 {
+    position: absolute;
+    width: 863px;
+    height: 863px;
+    right: 0;
+    top: -20rem;
+    z-index: -1;
+  }
+}
+
+// Course benefits section
+
+.course-benefits {
+  .course-benefits-title {
+    font-weight: 400;
+    font-size: 7.75rem;
+    line-height: 89%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text_light;
+    margin-bottom: 2rem;
+  }
+
+  .img-block {
+    position: relative;
+  }
+
+  .cube-image-1 {
+    position: absolute;
+    width: 29rem;
+    height: 29rem;
+    right: 15rem;
+    top: -21.875rem;
+    z-index: -1;
+  }
+
+  .cube-image-2 {
+    position: absolute;
+    width: 27.25rem;
+    height: 27.25rem;
+    right: 10rem;
+    bottom: -21.875rem;
+    z-index: -1;
+  }
+
+  .course-benefits-desc {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: $text_light;
+    max-width: 30rem;
+    margin-left: 0.8rem;
+    margin-bottom: 15rem;
+  }
+
+  .custom-collapse-btn {
+    background-color: $btn;
+    color: $background_color;
+    padding: 10px 70px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: center;
+    text-shadow: none;
+    border-radius: 20px;
+  }
+
+  .card-body {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: $text_light;
+    padding: 0;
+    max-width: 40rem;
+
+    .external-list {
+      padding-left: 2rem;
+
+      .external-list-item {
+        margin-bottom: 1.2rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .internal-list {
+      list-style: "— ";
+      padding: 0;
+
+      .internal-list-item {
+        margin-bottom: 0.65rem;
+      }
+
+      & .internal-list-item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .block-container {
+    position: relative;
+    .block {
+      position: relative;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .block-name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 4rem;
+      color: $text_light;
+      margin-bottom: 1rem;
+    }
+
+    .block-title {
+      max-width: 40rem;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: $text_light;
+      margin-bottom: 2rem;
+    }
+
+    .img-4 {
+      position: absolute;
+      top: -3rem;
+      left: -3rem;
+      z-index: -1;
+    }
+
+    .img-5 {
+      padding: 0;
+      position: absolute;
+      width: 46rem;
+      height: 46rem;
+      top: 25rem;
+      right: -30rem;
+      z-index: -1;
+    }
+  }
 }
