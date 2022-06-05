@@ -262,4 +262,140 @@ header .main-img {
   right: -30rem;
   z-index: -1;
 }
+
+.speakers {
+  position: relative;
+}
+.speakers .color-1 {
+  background-color: #ba70d0;
+}
+.speakers .color-2 {
+  background-color: #6155f2;
+}
+.speakers .color-3 {
+  background-color: #8bd0d0;
+}
+.speakers .grid {
+  max-width: 70rem;
+}
+.speakers .grid .grid-item {
+  float: left;
+  width: 219px;
+  height: 375px;
+  margin: 0 6rem 4rem 0;
+}
+.speakers .grid .grid-item:last-child {
+  margin-bottom: 10rem;
+}
+.speakers .grid .grid-item--translate {
+  transform: translateX(50%);
+  margin: 0 6rem 0 0;
+}
+.speakers .img-6 {
+  position: absolute;
+  right: 0;
+  top: -15rem;
+  z-index: -1;
+}
+.speakers .img-7 {
+  position: absolute;
+  right: 0;
+  top: -23rem;
+  z-index: -1;
+}
+.speakers .img-8 {
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  z-index: -1;
+}
+
+.custom-card {
+  width: 219px;
+  height: 375px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  z-index: auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.28);
+}
+.custom-card:hover .front-side {
+  opacity: 0;
+}
+.custom-card:hover .back-side {
+  opacity: 1;
+}
+
+.front-side {
+  opacity: 1;
+  z-index: auto;
+  transition: opacity 0.5s;
+  margin: auto 2rem;
+}
+.front-side .speaker {
+  width: 219px;
+  height: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back-side {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: end;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.back-side .card-content {
+  padding: 0.75rem;
+}
+.back-side .btn {
+  z-index: 1;
+}
+.back-side .name {
+  padding-top: 2rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 125%;
+  text-indent: 2px;
+  color: #fff;
+  text-shadow: none;
+}
+.back-side .position {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 125%;
+  text-indent: 2px;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: none;
+}
+.back-side .card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+  text-indent: 2px;
+  color: #fff;
+  text-shadow: none;
+}
+.back-side .btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.back-side .btn-container .btn {
+  border-radius: 20px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 96.49%;
+  letter-spacing: 0.08em;
+  color: #000000;
+  padding: 8px;
+}
 /*# sourceMappingURL=style.css.map */
