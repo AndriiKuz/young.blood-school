@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgba(21, 21, 21, 0.95);
+  background: #151515;
 }
 
 .wrapper {
@@ -29,7 +29,7 @@ section {
   margin-bottom: 10rem;
 }
 
-.navbar a {
+header .navbar a {
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
@@ -37,17 +37,22 @@ section {
   color: #fff;
   cursor: pointer;
 }
-.navbar a:hover, .navbar a:visited {
+header .navbar a:hover, header .navbar a:visited {
   color: #fff;
 }
-.navbar .custom-toggler.navbar-toggler-icon {
+header .navbar .custom-toggler.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   font-size: 2rem;
 }
-.navbar .navbar-nav li {
-  margin-left: 1.5rem;
+header .navbar .navbar-nav {
+  margin-top: 2rem;
 }
-.navbar .top-menu li a::after {
+header .navbar .navbar-nav li {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+header .navbar .top-menu li a::after {
   content: "";
   display: block;
   width: 100%;
@@ -56,10 +61,9 @@ section {
   transition: all 0.3s;
   transform: scale(0);
 }
-.navbar .top-menu li a:hover::after {
+header .navbar .top-menu li a:hover::after {
   transform: scale(1);
 }
-
 header h1 {
   color: #fff;
   font-weight: 900;
@@ -68,7 +72,7 @@ header h1 {
 }
 header .header-text {
   display: flex;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 7.75rem;
   line-height: 89%;
   letter-spacing: 0.03em;
@@ -152,6 +156,9 @@ header .main-img {
   z-index: -1;
 }
 
+.course-benefits {
+  position: relative;
+}
 .course-benefits .course-benefits-title {
   font-weight: 400;
   font-size: 7.75rem;
@@ -191,13 +198,14 @@ header .main-img {
 }
 .course-benefits .custom-collapse-btn {
   background-color: #f8d849;
-  color: rgba(21, 21, 21, 0.95);
+  color: #151515;
   padding: 10px 70px;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.875rem;
   text-align: center;
   text-shadow: none;
+  border: none;
   border-radius: 20px;
 }
 .course-benefits .card-body {
@@ -224,11 +232,7 @@ header .main-img {
 .course-benefits .card-body .internal-list .internal-list-item:last-child {
   margin-bottom: 0;
 }
-.course-benefits .block-container {
-  position: relative;
-}
 .course-benefits .block-container .block {
-  position: relative;
   padding: 0;
   margin-bottom: 1.5rem;
 }
@@ -253,13 +257,13 @@ header .main-img {
   left: -3rem;
   z-index: -1;
 }
-.course-benefits .block-container .img-5 {
+.course-benefits .img-5 {
   padding: 0;
   position: absolute;
   width: 46rem;
   height: 46rem;
-  top: 25rem;
-  right: -30rem;
+  top: 63rem;
+  right: -6.25rem;
   z-index: -1;
 }
 
@@ -279,17 +283,13 @@ header .main-img {
   max-width: 70rem;
 }
 .speakers .grid .grid-item {
-  float: left;
+  display: inline-block;
   width: 219px;
   height: 375px;
   margin: 0 6rem 4rem 0;
 }
-.speakers .grid .grid-item:last-child {
-  margin-bottom: 10rem;
-}
 .speakers .grid .grid-item--translate {
   transform: translateX(50%);
-  margin: 0 6rem 0 0;
 }
 .speakers .img-6 {
   position: absolute;
@@ -309,8 +309,7 @@ header .main-img {
   top: -5rem;
   z-index: -1;
 }
-
-.custom-card {
+.speakers .custom-card {
   width: 219px;
   height: 375px;
   overflow: hidden;
@@ -319,28 +318,26 @@ header .main-img {
   z-index: auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.28);
 }
-.custom-card:hover .front-side {
+.speakers .custom-card:hover .front-side {
   opacity: 0;
 }
-.custom-card:hover .back-side {
+.speakers .custom-card:hover .back-side {
   opacity: 1;
 }
-
-.front-side {
+.speakers .custom-card .front-side {
   opacity: 1;
   z-index: auto;
   transition: opacity 0.5s;
   margin: auto 2rem;
 }
-.front-side .speaker {
+.speakers .custom-card .front-side .speaker {
   width: 219px;
   height: 375px;
   position: absolute;
   top: 0;
   left: 0;
 }
-
-.back-side {
+.speakers .custom-card .back-side {
   height: 340px;
   display: flex;
   flex-direction: column;
@@ -349,13 +346,13 @@ header .main-img {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.back-side .card-content {
+.speakers .custom-card .back-side .card-content {
   padding: 0.75rem;
 }
-.back-side .btn {
+.speakers .custom-card .back-side .btn {
   z-index: 1;
 }
-.back-side .name {
+.speakers .custom-card .back-side .name {
   padding-top: 2rem;
   font-weight: 900;
   font-size: 1.4rem;
@@ -364,7 +361,7 @@ header .main-img {
   color: #fff;
   text-shadow: none;
 }
-.back-side .position {
+.speakers .custom-card .back-side .position {
   font-style: normal;
   font-weight: 900;
   font-size: 1rem;
@@ -374,7 +371,7 @@ header .main-img {
   margin-bottom: 1rem;
   text-shadow: none;
 }
-.back-side .card-text {
+.speakers .custom-card .back-side .card-text {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -383,12 +380,12 @@ header .main-img {
   color: #fff;
   text-shadow: none;
 }
-.back-side .btn-container {
+.speakers .custom-card .back-side .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.back-side .btn-container .btn {
+.speakers .custom-card .back-side .btn-container .btn {
   border-radius: 20px;
   font-style: italic;
   font-weight: 500;
@@ -397,5 +394,205 @@ header .main-img {
   letter-spacing: 0.08em;
   color: #000000;
   padding: 8px;
+}
+
+.registration {
+  position: relative;
+}
+.registration .registration-title {
+  margin-bottom: 2.25rem;
+}
+.registration .registration-date {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 125%;
+  text-indent: 2px;
+  color: #fff;
+  margin-bottom: 6.5rem;
+}
+.registration form {
+  max-width: 30rem;
+  margin-bottom: 25rem;
+}
+.registration form label {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 125%;
+  text-indent: 2px;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.registration form .submit-btn-custom {
+  background-color: #f8d849;
+  border: none;
+  text-shadow: none;
+  padding: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 125%;
+  text-indent: 2px;
+  color: #151515;
+  border-radius: 20px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.registration .img-9 {
+  position: absolute;
+  top: 15rem;
+  left: -6.25rem;
+  z-index: -1;
+}
+.registration .img-10 {
+  position: absolute;
+  top: 42rem;
+  left: 0;
+  z-index: -2;
+}
+.registration .img-11 {
+  position: absolute;
+  top: -5rem;
+  right: -6.25rem;
+  left: auto;
+  z-index: -2;
+}
+
+footer .footer-section-text {
+  min-width: max-content;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+footer .tel {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+footer .location,
+footer .tel {
+  display: block;
+  margin-bottom: 1rem;
+}
+footer .nav-item a:hover,
+footer .nav-item li a:active {
+  color: #f8d849;
+}
+
+@media (max-width: 36em) {
+  section {
+    margin-bottom: 5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+  }
+
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .wrapper h1 {
+    font-size: 3.5rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+  }
+  .wrapper .main-img {
+    width: 27rem;
+    height: auto;
+    top: 20rem;
+  }
+  .wrapper .header-text {
+    font-size: 2.5rem;
+    margin: 6.125rem 0 10rem auto;
+  }
+  .wrapper .experience .img-1 {
+    width: 25rem;
+    height: 25rem;
+    top: 35rem;
+  }
+  .wrapper .course-benefits .course-benefits-title {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 89%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  .wrapper .course-benefits .course-benefits-desc {
+    margin-bottom: 7.5rem;
+  }
+  .wrapper .course-benefits .empty-block {
+    display: none;
+  }
+  .wrapper .course-benefits .img-block {
+    display: none;
+  }
+  .wrapper .course-benefits .block-container .block {
+    padding: 0;
+    margin: 0 0 3rem 1rem;
+  }
+  .wrapper .course-benefits .block-container .block-name {
+    font-size: 2rem;
+  }
+  .wrapper .course-benefits .block-container .block-title {
+    font-size: 1.3rem;
+  }
+  .wrapper .course-benefits .block-container .card-body {
+    max-width: 22rem;
+  }
+  .wrapper .course-benefits .img-5 {
+    width: 24rem;
+    height: 24rem;
+    right: -2.5rem;
+  }
+  .wrapper .speakers .img-7,
+.wrapper .speakers .img-8 {
+    display: none;
+  }
+  .wrapper .speakers .img-6 {
+    position: absolute;
+    right: 0;
+    top: 75rem;
+    width: 100%;
+    z-index: -1;
+  }
+  .wrapper .speakers .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .wrapper .speakers .grid .grid-item {
+    display: inline-block;
+    width: 219px;
+    height: 375px;
+    margin: 0;
+  }
+  .wrapper .speakers .grid .grid-item--translate {
+    transform: none;
+  }
+  .wrapper .registration .registration-date {
+    font-size: 2rem;
+  }
+  .wrapper .registration .img-9 {
+    display: none;
+  }
+  .wrapper .registration .img-10 {
+    display: none;
+  }
+  .wrapper .registration .img-11 {
+    position: absolute;
+    top: -5rem;
+    right: -3rem;
+    left: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
