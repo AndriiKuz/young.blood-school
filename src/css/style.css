@@ -12,6 +12,7 @@ body {
 }
 
 .wrapper {
+  max-width: 1600px;
   padding-left: 6.25rem;
   padding-right: 6.25rem;
 }
@@ -144,7 +145,7 @@ header .main-img {
 }
 .experience .experience-item {
   padding: 0;
-  width: 18rem;
+  width: 17rem;
   margin: 0 auto 4rem auto;
 }
 .experience .img-1 {
@@ -280,16 +281,17 @@ header .main-img {
   background-color: #8bd0d0;
 }
 .speakers .grid {
-  max-width: 70rem;
+  max-width: 66rem;
 }
 .speakers .grid .grid-item {
   display: inline-block;
   width: 219px;
   height: 375px;
-  margin: 0 6rem 4rem 0;
+  margin: 0 3rem 4rem 3rem;
+  transform: translateX(-25%);
 }
 .speakers .grid .grid-item--translate {
-  transform: translateX(50%);
+  transform: translateX(25%);
 }
 .speakers .img-6 {
   position: absolute;
@@ -399,6 +401,14 @@ header .main-img {
 .registration {
   position: relative;
 }
+.registration .registration-contrast {
+  background-color: rgba(15, 15, 15, 0.65);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 15rem;
+  max-width: 30rem;
+}
 .registration .registration-title {
   margin-bottom: 2.25rem;
 }
@@ -410,10 +420,6 @@ header .main-img {
   text-indent: 2px;
   color: #fff;
   margin-bottom: 6.5rem;
-}
-.registration form {
-  max-width: 30rem;
-  margin-bottom: 25rem;
 }
 .registration form label {
   font-style: normal;
@@ -459,10 +465,9 @@ header .main-img {
 }
 
 footer .footer-section-text {
-  min-width: max-content;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   color: #fff;
   margin-bottom: 1rem;
@@ -481,118 +486,5 @@ footer .tel {
 footer .nav-item a:hover,
 footer .nav-item li a:active {
   color: #f8d849;
-}
-
-@media (max-width: 36em) {
-  section {
-    margin-bottom: 5rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 5rem;
-    margin-left: 1rem;
-  }
-
-  .wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .wrapper h1 {
-    font-size: 3.5rem;
-    margin-top: 8rem;
-    margin-left: 1rem;
-  }
-  .wrapper .main-img {
-    width: 27rem;
-    height: auto;
-    top: 20rem;
-  }
-  .wrapper .header-text {
-    font-size: 2.5rem;
-    margin: 6.125rem 0 10rem auto;
-  }
-  .wrapper .experience .img-1 {
-    width: 25rem;
-    height: 25rem;
-    top: 35rem;
-  }
-  .wrapper .course-benefits .course-benefits-title {
-    font-weight: 400;
-    font-size: 3rem;
-    line-height: 89%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 2rem;
-  }
-  .wrapper .course-benefits .course-benefits-desc {
-    margin-bottom: 7.5rem;
-  }
-  .wrapper .course-benefits .empty-block {
-    display: none;
-  }
-  .wrapper .course-benefits .img-block {
-    display: none;
-  }
-  .wrapper .course-benefits .block-container .block {
-    padding: 0;
-    margin: 0 0 3rem 1rem;
-  }
-  .wrapper .course-benefits .block-container .block-name {
-    font-size: 2rem;
-  }
-  .wrapper .course-benefits .block-container .block-title {
-    font-size: 1.3rem;
-  }
-  .wrapper .course-benefits .block-container .card-body {
-    max-width: 22rem;
-  }
-  .wrapper .course-benefits .img-5 {
-    width: 24rem;
-    height: 24rem;
-    right: -2.5rem;
-  }
-  .wrapper .speakers .img-7,
-.wrapper .speakers .img-8 {
-    display: none;
-  }
-  .wrapper .speakers .img-6 {
-    position: absolute;
-    right: 0;
-    top: 75rem;
-    width: 100%;
-    z-index: -1;
-  }
-  .wrapper .speakers .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-  }
-  .wrapper .speakers .grid .grid-item {
-    display: inline-block;
-    width: 219px;
-    height: 375px;
-    margin: 0;
-  }
-  .wrapper .speakers .grid .grid-item--translate {
-    transform: none;
-  }
-  .wrapper .registration .registration-date {
-    font-size: 2rem;
-  }
-  .wrapper .registration .img-9 {
-    display: none;
-  }
-  .wrapper .registration .img-10 {
-    display: none;
-  }
-  .wrapper .registration .img-11 {
-    position: absolute;
-    top: -5rem;
-    right: -3rem;
-    left: auto;
-  }
 }
 /*# sourceMappingURL=style.css.map */

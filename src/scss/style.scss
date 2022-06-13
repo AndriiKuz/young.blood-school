@@ -18,6 +18,7 @@ body {
 }
 
 .wrapper {
+  max-width: 1600px;
   padding-left: 6.25rem;
   padding-right: 6.25rem;
 }
@@ -180,7 +181,7 @@ header {
 
   .experience-item {
     padding: 0;
-    width: 18rem;
+    width: 17rem;
     margin: 0 auto 4rem auto;
   }
 
@@ -341,17 +342,18 @@ header {
   }
 
   .grid {
-    max-width: 70rem;
+    max-width: 66rem;
 
     .grid-item {
       display: inline-block;
       width: 219px;
       height: 375px;
-      margin: 0 6rem 4rem 0;
+      margin: 0 3rem 4rem 3rem;
+      transform: translateX(-25%);
     }
 
     .grid-item--translate {
-      transform: translateX(50%);
+      transform: translateX(25%);
     }
   }
 
@@ -480,6 +482,15 @@ header {
 .registration {
   position: relative;
 
+  .registration-contrast {
+    background-color: rgba(15, 15, 15, 0.65);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 15rem;
+    max-width: 30rem;
+  }
+
   .registration-title {
     margin-bottom: 2.25rem;
   }
@@ -494,8 +505,6 @@ header {
   }
 
   form {
-    max-width: 30rem;
-    margin-bottom: 25rem;
     label {
       font-style: normal;
       font-weight: 900;
@@ -549,10 +558,9 @@ header {
 
 footer {
   .footer-section-text {
-    min-width: max-content;
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     color: $text_light;
     margin-bottom: 1rem;
@@ -574,154 +582,5 @@ footer {
   .nav-item a:hover,
   .nav-item li a:active {
     color: $btn;
-  }
-}
-
-@media (max-width: 36em) {
-  section {
-    margin-bottom: 5rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 5rem;
-    margin-left: 1rem;
-  }
-  .wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    h1 {
-      font-size: 3.5rem;
-      margin-top: 8rem;
-      margin-left: 1rem;
-    }
-
-    .main-img {
-      width: 27rem;
-      height: auto;
-      top: 20rem;
-    }
-
-    .header-text {
-      font-size: 2.5rem;
-      margin: 6.125rem 0 10rem auto;
-    }
-
-    .experience {
-      .img-1 {
-        width: 25rem;
-        height: 25rem;
-        top: 35rem;
-      }
-    }
-
-    .course-benefits {
-      .course-benefits-title {
-        font-weight: 400;
-        font-size: 3rem;
-        line-height: 89%;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $text_light;
-        margin-bottom: 2rem;
-      }
-
-      .course-benefits-desc {
-        margin-bottom: 7.5rem;
-      }
-
-      .empty-block {
-        display: none;
-      }
-
-      .img-block {
-        display: none;
-      }
-
-      .block-container {
-        .block {
-          padding: 0;
-          margin: 0 0 3rem 1rem;
-        }
-        .block-name {
-          font-size: 2rem;
-        }
-
-        .block-title {
-          font-size: 1.3rem;
-        }
-
-        .card-body {
-          max-width: 22rem;
-        }
-      }
-
-      .img-5 {
-        width: 24rem;
-        height: 24rem;
-        right: -2.5rem;
-      }
-    }
-
-    .speakers {
-      .img-7,
-      .img-8 {
-        display: none;
-      }
-
-      .img-6 {
-        position: absolute;
-        right: 0;
-        top: 75rem;
-        width: 100%;
-        z-index: -1;
-      }
-
-      .grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-
-        .grid-item {
-          display: inline-block;
-          width: 219px;
-          height: 375px;
-          margin: 0;
-          // margin-top: 1rem;
-        }
-
-        .grid-item--translate {
-          transform: none;
-          // margin-top: 1rem;
-        }
-      }
-    }
-
-    .registration {
-      .registration-date {
-        font-size: 2rem;
-      }
-
-      .img-9 {
-        display: none;
-        // top: 15rem;
-        // left: -1rem;
-      }
-
-      .img-10 {
-        display: none;
-        // top: 40rem;
-        // left: 0;
-      }
-
-      .img-11 {
-        position: absolute;
-        top: -5rem;
-        right: -3rem;
-        left: auto;
-      }
-    }
   }
 }

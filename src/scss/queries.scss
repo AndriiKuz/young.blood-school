@@ -1,0 +1,344 @@
+@media screen and (max-width: 1500px) {
+  .img-block {
+    position: relative;
+
+    .cube-image-1 {
+      position: absolute;
+      width: 29rem;
+      height: 29rem;
+      right: 2rem;
+      top: -12rem;
+      z-index: -1;
+    }
+
+    .cube-image-2 {
+      position: absolute;
+      width: 27.25rem;
+      height: 27.25rem;
+      right: -1rem;
+      bottom: -31rem;
+      z-index: -1;
+    }
+  }
+
+  .registration {
+    .img-9 {
+      position: absolute;
+      top: 15rem;
+      left: -11.25rem;
+      z-index: -1;
+    }
+
+    .img-10 {
+      position: absolute;
+      top: 42rem;
+      left: 0;
+      z-index: -2;
+    }
+  }
+  footer {
+    .empty-footer-col {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .speakers {
+    .grid {
+      max-width: 40rem;
+      .grid-item {
+        margin: 0 1.5rem 4rem 1.5rem;
+        transform: none;
+      }
+
+      .grid-item--translate {
+        margin: 0 1.5rem 4rem 1.5rem;
+        transform: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .registration {
+    .img-9 {
+      position: absolute;
+      top: 15rem;
+      left: -15rem;
+      z-index: -1;
+    }
+
+    .img-10 {
+      position: absolute;
+      top: 42rem;
+      left: 0;
+      z-index: -2;
+    }
+  }
+
+  .course-benefits {
+    .img-block {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+  }
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-top: 8rem;
+      margin-left: 1rem;
+    }
+
+    .main-img {
+      max-width: 37rem;
+      height: auto;
+      top: 10rem;
+    }
+
+    .header-text {
+      font-size: 2.5rem;
+      margin: 6.125rem 0 10rem auto;
+    }
+
+    .experience {
+      .img-1 {
+        width: 25rem;
+        height: 25rem;
+        top: 35rem;
+      }
+    }
+
+    .course-benefits {
+      .course-benefits-title {
+        font-size: 3rem;
+
+        margin-bottom: 2rem;
+      }
+
+      .course-benefits-desc {
+        margin-bottom: 7.5rem;
+      }
+
+      .empty-block {
+        display: none;
+      }
+
+      .img-block {
+        display: none;
+      }
+
+      .block-container {
+        .block {
+          padding: 0;
+          margin: 0 0 3rem 1rem;
+        }
+        .block-name {
+          font-size: 2rem;
+        }
+
+        .block-title {
+          font-size: 1.3rem;
+        }
+
+        .card-body {
+          max-width: 22rem;
+        }
+      }
+
+      .img-5 {
+        width: 24rem;
+        height: 24rem;
+        right: -2.5rem;
+      }
+    }
+
+    .speakers {
+      .img-7,
+      .img-8 {
+        display: none;
+      }
+    }
+
+    .registration {
+      .registration-date {
+        font-size: 2rem;
+      }
+
+      .img-9,
+      .img-10 {
+        display: none;
+      }
+
+      .img-11 {
+        position: absolute;
+        top: -5rem;
+        right: -3rem;
+        left: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    max-width: 22rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+  }
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-top: 8rem;
+      margin-left: 1rem;
+    }
+
+    .main-img {
+      max-width: 20rem;
+      height: auto;
+      top: 20rem;
+    }
+
+    .header-text {
+      font-size: 2.5rem;
+      margin: 6.125rem 0 10rem auto;
+    }
+
+    .experience {
+      .img-1 {
+        width: 25rem;
+        height: 25rem;
+        top: 35rem;
+      }
+    }
+
+    .course-benefits {
+      .course-benefits-title {
+        font-size: 3rem;
+
+        margin-bottom: 2rem;
+      }
+
+      .course-benefits-desc {
+        margin-bottom: 7.5rem;
+      }
+
+      .empty-block {
+        display: none;
+      }
+
+      .img-block {
+        display: none;
+      }
+
+      .block-container {
+        .block {
+          padding: 0;
+          margin: 0 0 3rem 1rem;
+        }
+        .block-name {
+          font-size: 2rem;
+        }
+
+        .block-title {
+          font-size: 1.3rem;
+        }
+
+        .card-body {
+          max-width: 22rem;
+        }
+      }
+
+      .img-5 {
+        width: 24rem;
+        height: 24rem;
+        right: -2.5rem;
+      }
+    }
+
+    .speakers {
+      .img-7,
+      .img-8 {
+        display: none;
+      }
+
+      .img-6 {
+        position: absolute;
+        right: 0;
+        top: 75rem;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        .grid-item {
+          display: inline-block;
+          width: 219px;
+          height: 375px;
+          margin: 0;
+          // margin-top: 1rem;
+        }
+
+        .grid-item--translate {
+          transform: none;
+          // margin-top: 1rem;
+        }
+      }
+    }
+
+    .registration {
+      .registration-date {
+        font-size: 2rem;
+      }
+
+      .img-9 {
+        display: none;
+        // top: 15rem;
+        // left: -1rem;
+      }
+
+      .img-10 {
+        display: none;
+        // top: 40rem;
+        // left: 0;
+      }
+
+      .img-11 {
+        position: absolute;
+        top: -5rem;
+        right: -3rem;
+        left: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+}
