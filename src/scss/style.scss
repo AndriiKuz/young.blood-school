@@ -489,6 +489,7 @@ header {
     padding: 2rem;
     margin-bottom: 15rem;
     max-width: 30rem;
+    overflow: hidden;
   }
 
   .registration-title {
@@ -505,6 +506,7 @@ header {
   }
 
   form {
+    position: relative;
     label {
       font-style: normal;
       font-weight: 900;
@@ -528,6 +530,36 @@ header {
       color: $background_color;
       border-radius: 20px;
       box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    input._error {
+      border: 2px solid red;
+    }
+
+    input::placeholder {
+      color: #c6c6c6;
+      text-shadow: none;
+    }
+
+    &::after {
+      content: "";
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.9) url(../img/spinner.svg) center /
+        width= "30px" height= "30px" no-repeat;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s;
+      transform: translate(-25%, -25%);
+    }
+
+    &._sending::after {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
