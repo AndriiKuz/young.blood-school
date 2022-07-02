@@ -44,23 +44,62 @@
 }
 
 @media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    .main-img {
+      width: 700px;
+    }
+
+    .main-title {
+      margin-top: 7rem;
+    }
+
+    .header-text {
+      font-size: 6rem;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 5rem;
+  }
+
+  .experience {
+    .img-1 {
+      width: 700px;
+      height: auto;
+    }
+  }
+
+  .course-benefits {
+    .img-block {
+      display: none;
+    }
+
+    .course-benefits-title {
+      font-size: 5rem;
+    }
+
+    .course-benefits-desc {
+      margin-bottom: 5rem;
+    }
+  }
+
   .speakers {
     .grid {
-      max-width: 40rem;
+      grid-template-columns: 1fr 1fr;
+
       .grid-item {
-        margin: 0 1.5rem 4rem 1.5rem;
         transform: none;
       }
 
       .grid-item--translate {
-        margin: 0 1.5rem 4rem 1.5rem;
         transform: none;
       }
     }
   }
-}
 
-@media screen and (max-width: 992px) {
   .registration {
     .img-9 {
       position: absolute;
@@ -77,9 +116,9 @@
     }
   }
 
-  .course-benefits {
-    .img-block {
-      display: none;
+  footer {
+    .footer-section-text {
+      font-size: 60%;
     }
   }
 }
@@ -94,6 +133,7 @@
     margin-bottom: 5rem;
     margin-left: 1rem;
   }
+
   .wrapper {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -189,6 +229,8 @@
         top: -5rem;
         right: -3rem;
         left: auto;
+        max-width: 750px;
+        height: auto;
       }
     }
   }
@@ -196,7 +238,6 @@
 
 @media screen and (max-width: 480px) {
   section {
-    max-width: 22rem;
     margin-bottom: 5rem;
   }
 
@@ -205,6 +246,7 @@
     margin-bottom: 5rem;
     margin-left: 1rem;
   }
+
   .wrapper {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -237,7 +279,6 @@
     .course-benefits {
       .course-benefits-title {
         font-size: 3rem;
-
         margin-bottom: 2rem;
       }
 
@@ -293,23 +334,7 @@
       }
 
       .grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-
-        .grid-item {
-          display: inline-block;
-          width: 219px;
-          height: 375px;
-          margin: 0;
-          // margin-top: 1rem;
-        }
-
-        .grid-item--translate {
-          transform: none;
-          // margin-top: 1rem;
-        }
+        grid-template-columns: 1fr;
       }
     }
 
@@ -320,14 +345,10 @@
 
       .img-9 {
         display: none;
-        // top: 15rem;
-        // left: -1rem;
       }
 
       .img-10 {
         display: none;
-        // top: 40rem;
-        // left: 0;
       }
 
       .img-11 {

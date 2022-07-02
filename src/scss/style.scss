@@ -21,6 +21,7 @@ body {
   max-width: 1600px;
   padding-left: 6.25rem;
   padding-right: 6.25rem;
+  overflow: hidden;
 }
 
 section {
@@ -100,7 +101,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text_light;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 8.125rem 0 10rem auto;
   }
 
@@ -321,7 +322,6 @@ header {
     height: 46rem;
     top: 63rem;
     right: -6.25rem;
-
     z-index: -1;
   }
 }
@@ -342,13 +342,17 @@ header {
   }
 
   .grid {
-    max-width: 66rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    // max-width: 66rem;
 
     .grid-item {
-      display: inline-block;
+      // display: inline;
       width: 219px;
       height: 375px;
-      margin: 0 3rem 4rem 3rem;
+      margin: 0 auto;
       transform: translateX(-25%);
     }
 
@@ -549,8 +553,8 @@ header {
       left: 0;
       width: 200%;
       height: 200%;
-      background: rgba(255, 255, 255, 0.9) url(../img/spinner.svg) center /
-        width= "30px" height= "30px" no-repeat;
+      background: rgba(255, 255, 255, 0.9) url(../img/spinner.svg) center / 15%
+        no-repeat;
       opacity: 0;
       visibility: hidden;
       transition: all 0.5s;

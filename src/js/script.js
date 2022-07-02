@@ -1,3 +1,5 @@
+"use strict";
+
 const collapseBtn = document.querySelectorAll(".custom-collapse-btn");
 
 const changeBtnText = (btn) => {
